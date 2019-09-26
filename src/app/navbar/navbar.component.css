@@ -1,0 +1,19 @@
+.navbar {
+  color: #f4e2d1;
+  background-color: black;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    padding: 10px 12px;
+}
