@@ -13,7 +13,7 @@ export class CardComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('http://api.github.com/users/VictorMaria').subscribe((response) =>{
+    this.http.get('https://api.github.com/users/VictorMaria').subscribe((response) =>{
       this.response = response;
       this.joinedAt = moment(this.response.created_at).format("Do MMM YYYY")
     })
