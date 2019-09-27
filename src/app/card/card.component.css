@@ -5,6 +5,7 @@
     background-color: #daebf5;
 }
 
+
 img {
     border-radius: 25px;
     height: 450px;
@@ -18,4 +19,23 @@ i {
 a {
     text-decoration: none;
     color: black;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .profile {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        border-radius: 25px;
+        height: 350px;
+        width: 350px;
+    }
+    
+    .details, .avatar {
+      padding: 2rem;
+      width: 90%;
+    }
 }
