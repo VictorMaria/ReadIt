@@ -1,0 +1,32 @@
+<div class = "profile" *ngIf = "response">
+  <div class = "avatar">
+      <img src="{{ response.avatar_url }}">
+  </div>
+  <div class="details">
+      <h1>{{ response.login }}</h1>
+      <h2>
+            <i class="fa fa-user" aria-hidden="true"></i>
+             {{ response.bio }}</h2>
+      <h2>
+          <i class="fa fa-building" aria-hidden="true"></i>
+             {{ response.company }}</h2>
+      <h2>
+            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+            Joined on {{ joinedAt }}</h2>
+      <h2>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+            {{ response.location }}
+        </h2>
+       <h2>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            {{ response.public_repos }} Repos</h2> 
+        <h2><a href="{{ response.user }}">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Visit link
+        </a></h2>   
+        <h2>
+            <i class="fa fa-users" aria-hidden="true"></i>
+            {{ response.following }} following &nbsp;&nbsp; {{ response.followers }} followers  
+        </h2> 
+  </div>
+</div>          

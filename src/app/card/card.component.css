@@ -1,0 +1,41 @@
+.profile {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    background-color: #daebf5;
+}
+
+
+img {
+    border-radius: 25px;
+    height: 450px;
+    width: 450px;
+}
+
+i {
+    color: #dcb09e;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .profile {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        border-radius: 25px;
+        height: 350px;
+        width: 350px;
+    }
+    
+    .details, .avatar {
+      padding: 2rem;
+      width: 90%;
+    }
+}
